@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="plan.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1 id="titulo">meu planejador de algo</h1>
+
+        <h2>nova coisa</h2>
+        
+        <input type="text" id="tarefa" placeholder="digita o nome da tarefa">
+
+        <input type="text" id="material" placeholder="digita a materia">
+
+        <select id="prioridades">
+            <option value="">selecione a propriedade</option>
+            <option value="baixa">baixa</option>
+            <option value="media">media</option>
+            <option value="alta">alta</option>
+        </select>
+
+        <button onclick="adicionarTarefa()">
+            cadastrar tarefa
+        </button>
+
+        <button onclick="limparCampos()">
+            limpar campos
+        </button>
+
+        <p id="mensagem"></p>
+
+        <div class="contadores">
+            <p id="contador">tarefas cadastradas: 0</p>
+            <p id="contadorConcluidas">tarefas concluidas: 0</p>
+        </div>
+
+        <button onclick="alterarModo">
+            modo de concentraçao
+        </button>
+
+        <h2>minhas tarefas</h2>
+
+        <div id="listaTarefas"></div>
+
+    </div>
+    
+    <script src="plan.js"></script>
+
+</body>
+</html>
