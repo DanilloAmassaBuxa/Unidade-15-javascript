@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal de Dan Luiz, desenvolvedor em formação.">
+  <meta name="theme-color" content="#030609">
+
+  <title>Dan Luiz | Portfólio</title>
+
+  <link rel="stylesheet" href="portifoi.css">
+  <link rel="icon" href="favicon.ico">
+  <script src="portifoi.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a href="#inicio" class="logo" aria-label="DL - Página inicial">
+        DL<span>.</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+        type="button"
+      >
+        ☰
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <button
+        class="theme-toggle"
+        id="theme-toggle"
+        aria-label="Ativar modo claro"
+        aria-pressed="false"
+        type="button"
+      >
+        ☼
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INÍCIO -->
+    <section class="hero section container" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow" id="greeting">
+          Olá, não seja bem-vindo!
+        </p>
+
+        <h1>Eu sou <span>Dan Luiz</span></h1>
+
+        <h2>Desenvolvedor em gestação</h2>
+
+        <p class="description">
+          Gosto de tecnologia, de aprender coisas novas nem tanto, mas principalmente gosto de de transformar ideias em projetos.
+        </p>
+
+        <a class="button" href="#projetos">
+          Ver projetos ↗
+        </a>
+      </div>
+
+      <!-- FOTO DE PERFIL -->
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <img
+            src="foto-perfil.jpg"
+            alt="Foto de perfil de Dan Luiz"
+            class="profile-photo"
+          >
+
+          <span
+            class="photo-decoration"
+            aria-hidden="true"
+          ></span>
+        </div>
+
+        <p class="photo-caption">
+          <span class="status-dot" aria-hidden="true"></span>
+          Desenvolvedor em gestação
+        </p>
+      </div>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section class="section container" id="sobre">
+      <p class="eyebrow">01 / SOBRE MIM</p>
+
+      <h2 class="section-title">
+        Quem soy <span>yo?</span>
+      </h2>
+
+      <p class="section-description">
+        Sou estudante em desenvolvendo a função das minhas habilidades
+        em programação. Meu objetivo é aprender de forma prática
+        e constante, principalmente com Python, criar projetos
+        úteis (e inúteis) e buscar oportunidades na área de tecnologia programativa.
+      </p>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section container" id="habilidades">
+      <p class="eyebrow">02 / HABILIDADES</p>
+
+      <h2 class="section-title">
+        O que estou <span>aprendendo</span>
+      </h2>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span class="skill-symbol html-symbol">5</span>
+          <h3>HTML</h3>
+          <p>Estrutura de páginas</p>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-symbol css-symbol">3</span>
+          <h3>CSS</h3>
+          <p>Estilos e responsividade</p>
+        </article>
+
+        <article class="skill-card">
+          <span class="skill-symbol js-symbol">JS</span>
+          <h3>JavaScript</h3>
+          <p>Interatividade</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section container" id="projetos">
+      <p class="eyebrow">03 / PROJETOS</p>
+
+      <h2 class="section-title">
+        Meus <span>projetos</span>
+      </h2>
+
+      <p class="section-description">
+        Alguns dos projetos que desenvolvi ou estou desenvolvendo.
+      </p>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-icon" aria-hidden="true">🕯️</div>
+
+          <h3>Loja de velas</h3>
+
+          <p>
+            Site de produtos com catálogo e carrinho de compras.
+            <br>(Trabalho de Matemática)
+          </p>
+
+          <span class="tag">HTML · CSS · JS</span>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon" aria-hidden="true">⌘</div>
+
+          <h3>Átila</h3>
+
+          <p>
+            Projeto pessoal de inteligência artificial assistente
+            para computador, ainda em desenvolvimento.
+          </p>
+
+          <span class="tag">PYTHON · IA · JSON</span>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon" aria-hidden="true">🚗</div>
+
+          <h3>Site de carona</h3>
+
+          <p>
+            Interface para calcular distância, preço e tempo
+            de viagem. (Trabalho de Matemática)
+          </p>
+
+          <span class="tag">HTML · CSS · JS</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section container" id="contato">
+      <p class="eyebrow">04 / CONTATO</p>
+
+      <h2 class="section-title">
+        Não vamos <span>conversar?</span>
+      </h2>
+
+      <p class="section-description">
+        Tem alguma dúvida ou quer falar sobre tecnologia?
+        Se quiser, preencha o formulário abaixo, mas se não quiser também.
+      </p>
+
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nome</label>
+
+          <input
+            id="name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            required
+            maxlength="80"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+            maxlength="254"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensagem</label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            maxlength="1000"
+          ></textarea>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" id="consent" required>
+
+          <span>
+            Concordo com o uso dos dados para responder à mensagem
+            (venda da alma inclusa).
+          </span>
+        </label>
+
+        <button class="button submit-button" type="submit">
+          Enviar mensagem ↗
+        </button>
+
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#inicio" class="logo">
+        DL<span>.</span>
+      </a>
+
+      <p>Dan Luiz · © <span id="year"></span></p>
+
+      <a href="#inicio" class="back-top">
+        Rumo ao topo ↑
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
